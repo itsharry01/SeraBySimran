@@ -13,3 +13,9 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     nav.classList.remove("active");
   });
 });
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  nav.classList.toggle("active");
+  document.body.classList.toggle("menu-open");
+});
