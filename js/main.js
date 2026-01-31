@@ -1,7 +1,15 @@
-const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
+const hamburger = document.getElementById("hamburger");
+const nav = document.querySelector(".nav-links");
 
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  nav.classList.toggle("active");
+});
+
+/* Close menu when link is clicked */
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    nav.classList.remove("active");
   });
+});
