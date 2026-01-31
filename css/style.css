@@ -185,6 +185,10 @@
   transition:all .35s ease;
 }
 
+body.menu-open{
+  overflow:hidden;
+}
+
 
 /* MOBILE */
 @media (max-width: 768px){
