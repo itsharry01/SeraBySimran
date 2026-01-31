@@ -189,39 +189,53 @@
 /* MOBILE */
 @media (max-width: 768px){
 
-  /* Hide nav by default on mobile */
+  header{
+    position:relative;
+    z-index:2000;
+  }
+
   .nav-links{
+    /* FULL SCREEN OVERLAY */
     position:fixed;
-    inset:0;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+
     background:var(--cream);
+
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:30px;
+    gap:32px;
 
-    /* IMPORTANT FIX */
+    /* HIDDEN BY DEFAULT */
     transform:translateY(-100%);
-    pointer-events:none;
     opacity:0;
+    pointer-events:none;
 
     transition:
       transform .45s ease,
-      opacity .3s ease;
-    
-    z-index:1000;
+      opacity .35s ease;
+
+    z-index:1500;
   }
 
-  /* Show ONLY when active */
   .nav-links.active{
     transform:translateY(0);
-    pointer-events:auto;
     opacity:1;
+    pointer-events:auto;
   }
 
-  /* Hamburger */
+  .nav-links a{
+    font-size:14px;
+    letter-spacing:2px;
+  }
+
   .hamburger{
     display:flex;
-    z-index:1001;
+    position:relative;
+    z-index:2500;
   }
 }
