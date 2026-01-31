@@ -189,11 +189,7 @@
 /* MOBILE */
 @media (max-width: 768px){
 
-  .hamburger{
-    display:flex;
-    z-index:1001;
-  }
-
+  /* Hide nav by default on mobile */
   .nav-links{
     position:fixed;
     inset:0;
@@ -203,30 +199,29 @@
     justify-content:center;
     align-items:center;
     gap:30px;
+
+    /* IMPORTANT FIX */
     transform:translateY(-100%);
-    transition:transform .45s ease;
+    pointer-events:none;
+    opacity:0;
+
+    transition:
+      transform .45s ease,
+      opacity .3s ease;
+    
     z-index:1000;
   }
 
-  .nav-links a{
-    font-size:18px;
-    letter-spacing:2px;
-  }
-
+  /* Show ONLY when active */
   .nav-links.active{
     transform:translateY(0);
+    pointer-events:auto;
+    opacity:1;
   }
 
-  /* Hamburger → X animation */
-  .hamburger.active span:nth-child(1){
-    transform:rotate(45deg) translate(5px,5px);
-  }
-
-  .hamburger.active span:nth-child(2){
-    opacity:0;
-  }
-
-  .hamburger.active span:nth-child(3){
-    transform:rotate(-45deg) translate(6px,-6px);
+  /* Hamburger */
+  .hamburger{
+    display:flex;
+    z-index:1001;
   }
 }
