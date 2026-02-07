@@ -311,24 +311,38 @@ body.menu-open{
 
 .about{
   max-width:1200px;
-  margin:100px auto;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
+  margin:80px auto;
   padding:0 20px;
-  align-items:center;
 }
 
 .about-text{
-background:linear-gradient(135deg, #4a3126, #5b3a2c);
+  background:var(--dark);
   color:#efe6db;
-  padding:50px;
+  padding:60px;
+  border-radius:14px;
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+}
+
+.about-text span{
+  font-size:12px;
+  letter-spacing:2px;
+  opacity:.7;
+  text-transform:uppercase;
 }
 
 .about-text h3{
   font-family:'Playfair Display', serif;
-  font-size:28px;
-  margin-bottom:16px;
+  font-size:32px;
+  margin:14px 0;
+}
+
+.about-text p{
+  max-width:620px;
+  margin:auto;
+  font-size:14px;
+  line-height:1.7;
 }
 
 /* ================= FOOTER ================= */
