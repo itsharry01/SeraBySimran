@@ -319,7 +319,6 @@ body.menu-open{
   background:var(--dark);
   color:#efe6db;
   padding:60px;
-  border-radius:14px;
   text-align:center;
   max-width:900px;
   margin:auto;
