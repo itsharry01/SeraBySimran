@@ -378,3 +378,77 @@ footer{
   .hero,.about{grid-template-columns:1fr}
   .hero-text h2{font-size:36px}
 }
+
+.blog-post{
+  max-width:900px;
+  margin:80px auto;
+  padding:0 20px;
+}
+
+.blog-container h1{
+  font-family:'Playfair Display', serif;
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+.blog-date{
+  font-size:13px;
+  opacity:.6;
+  margin-bottom:25px;
+}
+
+.blog-post img{
+  width:100%;
+  margin:25px 0;
+  border-radius:6px;
+}
+
+.blog-content{
+  font-size:16px;
+  line-height:1.8;
+}
+
+.blog-content h3{
+  font-family:'Playfair Display', serif;
+  margin-top:30px;
+  margin-bottom:10px;
+}
+
+/* ===== BLOG TYPOGRAPHY FIXES (non-design changes) ===== */
+
+.blog-container{
+  max-width:800px;
+  margin:auto;
+}
+
+.blog-container h2{
+  font-family:'Playfair Display', serif;
+  margin-top:30px;
+  margin-bottom:10px;
+}
+
+.blog-container ul{
+  margin:15px 0 20px 20px;
+  line-height:1.8;
+}
+
+.product-links a{
+  color:var(--dark);
+  text-decoration:underline;
+}
+
+.product-links li{
+  margin-bottom:8px;
+}
+
+
+/* Affiliate note styling */
+.affiliate-note {
+  font-size: 0.85rem;      /* slightly smaller than body text */
+  color: #9a9a9a;          /* lighter grey */
+  font-weight: 300;        /* thinner text */
+  margin-top: 8px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
