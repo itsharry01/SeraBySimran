@@ -466,3 +466,14 @@ footer{
   border-radius: 8px;
 }
 
+.post-date {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #a89f8d;   /* soft warm taupe */
+  margin-top: 8px;
+  margin-bottom: 30px;
+  opacity: 0.85;
+}
+
