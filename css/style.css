@@ -466,7 +466,6 @@ footer{
   border-radius: 8px;
 }
 
-
 .post-date {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
@@ -478,3 +477,9 @@ footer{
   opacity: 0.85;
 }
 
+.adsbygoogle {
+  margin: 50px 0;
+  padding: 10px 0;
+  border-top: 1px solid #eee6d8;
+  border-bottom: 1px solid #eee6d8;
+}
