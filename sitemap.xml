@@ -24,13 +24,14 @@
     <priority>0.8</priority>
   </url>
 
- <!-- <url>
-    <loc>https://serabysimran.ca/minimalistic-skincare.html</loc>
-    <lastmod>2026-02-07</lastmod>
+  <url>
+    <loc>https://serabysimran.ca/blog/teen-skincare-routine.html</loc>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
+  <!--
    SAMPLE BLOG POSTS (EDIT THESE WHEN YOU CREATE REAL ONES) 
   <url>
     <loc>https://serabysimran.ca/blog/morning-skincare.html</loc>
